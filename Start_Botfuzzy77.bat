@@ -1,3 +1,3 @@
 :start
-py Botfuzzy77.py
+py Lightbot.py
 goto start
