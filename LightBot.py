@@ -77,11 +77,6 @@ async def changeIcons():
         await asyncio.sleep(600)
 
 @bot.command()
-async def feedback():
-    'Returns a link to a Google Forums, where you can leave feedback for the bot'
-    await bot.say("**Use This Link to Give Feedback on me :D**\nhttp://goo.gl/forms/5o0YV1wbmXAhv6XT2")
-
-@bot.command()
 async def status():
     'Returns the Status of the Bot, along with Additional Information'
     await bot.say("UpTime: {}s".format(str(datetime.timedelta(seconds = round(time.time() - startTime,1)))))
@@ -104,7 +99,7 @@ async def server(ctx, IP = "mc.limitlessmc.net"):
 @bot.command()
 async def source():
     'Returns a link to the source code for this bot'
-    await bot.say("https://github.com/77Wertfuzzy77/Botfuzzy77")
+    await bot.say(https://github.com/ChrisVengeance/Lightbot.)
 
 @bot.command(pass_context = True, hidden = True)
 async def relog(ctx):
