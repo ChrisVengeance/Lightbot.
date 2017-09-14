@@ -1,0 +1,5 @@
+ if(message.content == "Youtube" or message.content == "youtube"):
+        await bot.send_message(message.channel, "**Here Ya Go! https://www.youtube.com/channel/UCDlHRPCnEU8QoO_0eMSshbw?view_as=subscriber **")
+    
+if(message.content == "Twitch" or message.content == "twitch"):
+        await bot.send_message(message.channel, "Here ya go! https://www.twitch.tv/mr_vngeance")
