@@ -345,4 +345,4 @@ def addAfk(user, message):
         return 0
 
 if __name__ == '__main__':
-    bot.run('MjU1MjM3NTkzODg3NjcwMjcy.C9rivw.XF7iU4sKlD8AUIafzu07ia2fDqI')
+
