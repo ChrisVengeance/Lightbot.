@@ -12,12 +12,12 @@ class FlavorTexts:
 		self.bot = bot
 
 	@commands.command(hidden = True)
-	async def hep(self):
-	    await self.bot.say("Dont Be Lazy, Type .help")
+	async def Runs(self):
+	    await self.bot.say("a list of completed DarkSouls3 Challenge runs Check them out Here! https://plus.google.com/u/0/+ChrisVengeance")
 
 	@commands.command(hidden = True)
-	async def srbr(self):
-	    await self.bot.say("Dont Be Lazy, Type .server")
+	async def Vgs(self):
+	    await self.bot.say("Here's a Link to Light's personal Videogame Sountrack playlist! https://www.youtube.com/playlist?list=PLL46KqJ0EiNe1F3pN4HfQTKcDjy5sy0vh")
 
 	@commands.command()
 	async def fml(self):
@@ -88,16 +88,16 @@ class FlavorTexts:
 	    await self.bot.say(random.choice([
 	    	"Hey Mean!",
 	    	"How about... no",
-	    	"Sure, just gimme some bleach",
+	    	"Sure, i heard cyanide works wonders",
 	    	"Im Sorry, That goes against my programming"]))
 
 	@commands.command(hidden = True)
 	async def kms(self):
 	    await self.bot.say(random.choice([
-	    	"Nu, I be sad then ;-;",
+	    	"More souls for me then (:",
 	    	"Don't Die",
 	    	"Bet",
-	    	"Do it, you wont",
+	    	"Here's a noose then",
 	    	"Good :)"]))
 
 	@commands.command(pass_context = True)
@@ -171,21 +171,22 @@ class FlavorTexts:
 		elif 60 <= luck <= 80:
 			text = "Pretty Good"
 		elif 80 <= luck <= 100:
-			text = "AMAZING"
+			text = "HAX"
 		else:
 			text = "Literally Impossible"
 
 		await self.bot.say("{0.message.author.name}'s luck is {1} out of 100, which is **{2}**".format(ctx,luck,text))
 
 	@commands.command(pass_context = True)
-	async def shoot(self,ctx, member : str):
-	    'Adds Emotion'
-	    await self.bot.say(":gun: *{} Shot {}* :gun:".format(ctx.message.author.name, member))
-
+	async def Marry(self,ctx, member : str):
+		'Adds Emotion'
+		await self.bot.say(":ring: *{} Married {}* :ring:".format(ctx.message.author.name, member))
+		await self.bot.say("You may now kiss the bride!")
+	
 	@commands.command(pass_context = True)
 	async def hug(self,ctx, member : str):
-	    'Adds Emotion'
-	    await self.bot.say(":hugging: *{} Hugged {}* :hugging:".format(ctx.message.author.name, member))
+		'Adds Emotion'
+		await self.bot.say(":hugging: *{} Hugged {}* :hugging:".format(ctx.message.author.name, member))
 
 	# @commands.command(hidden = True)
 	# async def boss(self, old, correct):
