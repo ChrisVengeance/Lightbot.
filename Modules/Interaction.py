@@ -191,8 +191,7 @@ class FlavorTexts:
 	# @commands.command(hidden = True)
 	# async def boss(self, old, correct):
 	# 	new = []
-	# 	cur = 0
-	# 	for c in old:
+	# 	cur = 0	# 	for c in old:
 	# 		if correct[cur] == '0':
 	# 			new.append(self.inc(c))
 	# 		else:
@@ -205,14 +204,14 @@ class FlavorTexts:
 	# 	return values[c]
 
 	@commands.command(pass_context = True)
-	async def StaffRanks(self, ctx):
+	async def Staff(self, ctx):
 		Embed = discord.Embed(title="Limitless Staff", colour=0x4AA9D6)
-		Owners = ["Jay113355"]
+		Owner = ["Jay113355"]
 		HeadAdmin =["Light"]
 		Admins = ["StubbyMuffins", 'Wertfuzzy77', 'Bakafish']
 		Moderators = ["None"]
-		Helpers = ["None"]
-		Embed.add_field(name = "Owners", value = "{}".format(", ".join(Owners)))
+		Helpers = ["JenGrl", 'WTsoner']
+		Embed.add_field(name = "Owner", value = "{}".format(", ".join(Owner)))
 		Embed.add_field(name = "HeadAdmin", value = "{}".format(", ".join(HeadAdmin)))
 		Embed.add_field(name = "Admins", value = "{}".format(", ".join(Admins)))
 		Embed.add_field(name = "Moderators", value = "{}".format(", ".join(Moderators)))
