@@ -207,12 +207,12 @@ class FlavorTexts:
 	async def Staff(self, ctx):
 		Embed = discord.Embed(title="Limitless Staff", colour=0x4AA9D6)
 		Owner = ["Jay113355"]
-		HeadAdmin =["Light"]
+		Developer =["Light"]
 		Admins = ["StubbyMuffins", 'Wertfuzzy77', 'Bakafish']
 		Moderators = ["None"]
 		Helpers = ["JenGrl", 'WTsoner']
 		Embed.add_field(name = "Owner", value = "{}".format(", ".join(Owner)))
-		Embed.add_field(name = "HeadAdmin", value = "{}".format(", ".join(HeadAdmin)))
+		Embed.add_field(name = "Developer", value = "{}".format(", ".join(Developer)))
 		Embed.add_field(name = "Admins", value = "{}".format(", ".join(Admins)))
 		Embed.add_field(name = "Moderators", value = "{}".format(", ".join(Moderators)))
 		Embed.add_field(name = "Helpers", value = "{}".format(", ".join(Helpers)))
