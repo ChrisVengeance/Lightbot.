@@ -103,7 +103,7 @@ class FlavorTexts:
 	@commands.command(pass_context = True)
 	async def image(self, ctx, *toGoogle : str):
 		"Returns the First Found Image on Google Images for this Input"
-		service = build("customsearch", "v1", developerKey="AIzaSyB-ILulo61cnlt68SUP6giJwmyI3S6JgbQ")
+		service = build("customsearch", "v1", developerKey="")
 
 		googleSearch = " ".join(toGoogle)
 		res = service.cse().list(
