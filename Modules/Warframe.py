@@ -15,7 +15,9 @@ async def Ash(self):
 async def Nekros(self):
 	await self.bot.say("The Nekros warframe components are dropped by Lephantis in the orokin derelict assassinate mission, while the main blueprint is purchased from the market for 100,000 credits")
 
-
+@commands.command(hidden = True)
+async def Mesa(self):
+	await self.bot.say("The Mesa components can be obtained from Mutalist Alad V on Eris after crafting the blueprint")
 
 
 
