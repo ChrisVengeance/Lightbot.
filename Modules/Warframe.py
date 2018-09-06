@@ -25,7 +25,9 @@ async def Ship(self):
 	await self.bot.say("each of the different ship components can be found in rare loot containers mostly found in the derelict but can be found in any mission")
 
 
-
+@commands.command(hidden = True)
+async def Platinum(self):
+	await self.bot.say("Platinum can be bought from the playstation store for various prices")
 
 
 
