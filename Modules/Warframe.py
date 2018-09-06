@@ -20,7 +20,9 @@ async def Mesa(self):
 	await self.bot.say("The Mesa components can be obtained from Mutalist Alad V on Eris after crafting the blueprint")
 
 
-
+@commands.command(hidden = True)
+async def Ship(self):
+	await self.bot.say("each of the different ship components can be found in rare loot containers mostly found in the derelict but can be found in any mission")
 
 
 
