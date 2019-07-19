@@ -2,45 +2,25 @@ import discord
 from discord.ext import commands
 import asyncio
 
-class Warframe:
+class League:
 	def __init__(self, bot):
 		self.bot = bot
 
 
-@commands.command(hidden = True)
-async def Ash(self):
-	await self.bot.say("The Ash warframe components can be dropped from Manics both Grineer and Drekar and the blueprint can be purchased from the market")
-
-@commands.command(hidden = True)
-async def Nekros(self):
-	await self.bot.say("The Nekros warframe components are dropped by Lephantis in the orokin derelict assassinate mission, while the main blueprint is purchased from the market for 100,000 credits")
-
-@commands.command(hidden = True)
-async def Mesa(self):
-	await self.bot.say("The Mesa components can be obtained from Mutalist Alad V on Eris after crafting the blueprint")
-
-
-@commands.command(hidden = True)
-async def Ship(self):
-	await self.bot.say("each of the different ship components can be found in rare loot containers mostly found in the derelict but can be found in any mission")
-
-
-@commands.command(hidden = True)
-async def Platinum(self):
-	await self.bot.say("Platinum can be bought from the playstation store for various prices")
-
-
-
-
-
-
-
-
-
-
-
-
-
+@commands.command(pass_context = True)
+async def DariusItems(self, ctx):
+	Embed = discord.Embed(title="DariusItemList", colour=0x4AA9D6)
+	Conqueror = ["Trinity Force", 'Spirit Visage', 'Steraks Gage', 'Guardian Angel', 'Deadmans Plate']
+	AfterShock = ["Spirit Visage", 'Black Cleaver', 'Guardian Angel', 'Deadmans Plate', 'Steraks Gage']
+	Situationals = ["Randuins Omen", 'Thorn Mail', 'Righteous Glory', 'Adaptive Helm']
+	StaterItems = ["Corrupting Potion", 'Health Potion', 'Ninja Tabi', 'Merc Treads', 'Dorans Shield']
+	Misc = ["Control Ward"]
+	Embed.add_field(name = "Conqueror", value = "{}".format(", ".join(Conqueror)))
+	Embed.add_field(name = "AfterShock", value = "{}".format(", ".join(AfterShock)))
+	Embed.add_field(name = "Situationals", value ="{}".format(", ".join(Situationals)))
+	Embed.add_field(name = "StarterItems", value = "{}".format(" ,".join(StarterItems)))
+	Embed.add_field(name = "Misc", value = "{}".formant(", ".join(Misc)))
+	await self.bot.send_message(ctx.message.channel, embed = Embed)
 
 
 
@@ -216,4 +196,4 @@ async def Platinum(self):
 
 def setup(bot):
 
-	bot.add_cog(Warframe(bot))
+	bot.add_cog(League(bot))
